@@ -46,7 +46,6 @@ import mongodbIcon from "../assets/images/icons/mongodb.svg";
 // Scripting (Web Scraping & Automation)
 import beautifulsoupIcon from "../assets/images/icons/beautiful-soup.svg";
 
-
 export default function MyServices() {
     return (
     <div className="section-wrapper">
@@ -59,8 +58,8 @@ export default function MyServices() {
                 fxPerElement={false}
                 items={[
                     <ServiceItem
-                        title="Full-stack Development"
-                        desc="Building complete, scalable web applications from frontend to backend, ensuring high performance, clean architecture, and seamless user experiences."
+                        title="Desarrollo Full-stack"
+                        desc="Construcción de aplicaciones web completas y escalables desde el frontend hasta el backend, garantizando alto rendimiento, arquitectura limpia y experiencias de usuario fluidas."
                         icons={[
                             htmlIcon,
                             cssIcon,
@@ -79,8 +78,8 @@ export default function MyServices() {
                     />,
 
                     <ServiceItem
-                        title="Apps Development"
-                        desc="Designing and developing intuitive mobile and web apps tailored to your needs, focused on usability, performance, and long-term maintainability."
+                        title="Desarrollo de Aplicaciones"
+                        desc="Diseño y desarrollo de aplicaciones móviles y web intuitivas adaptadas a tus necesidades, centradas en la usabilidad, el rendimiento y el mantenimiento a largo plazo."
                         icons={[
                             javaIcon,
                             kotlinIcon,
@@ -89,8 +88,8 @@ export default function MyServices() {
                     />,
 
                     <ServiceItem
-                        title="Videogames"
-                        desc="Creating fun, interactive, and optimized gaming experiences, including Roblox development with LuaU, custom mechanics, game systems, and user-focused gameplay design."
+                        title="Videojuegos"
+                        desc="Creación de experiencias de juego divertidas, interactivas y optimizadas, incluyendo desarrollo en Roblox con LuaU, mecánicas personalizadas, sistemas de juego y diseño de gameplay centrado en el usuario."
                         icons={[
                             robloxStudioIcon,
                             godotIcon,
@@ -99,19 +98,20 @@ export default function MyServices() {
                     />,
 
                     <ServiceItem
-                        title="Desktop Apps Development"
-                        desc="Developing cross-platform desktop applications using Flutter and Electron, delivering fast, responsive, and modern software for Windows, Linux, and macOS."
+                        title="Desarrollo de Aplicaciones de Escritorio"
+                        desc="Desarrollo de aplicaciones de escritorio multiplataforma usando Flutter y Electron, entregando software rápido, responsive y moderno para Windows, Linux y macOS."
                         icons={[
                             javaIcon,
                             pythonIcon,
                             electronIcon,
-                            flutterIcon
+                            flutterIcon,
+                            jsIcon
                         ]}
                     />,
 
                     <ServiceItem
-                        title="Embedded Systems"
-                        desc="Building embedded solutions with ESP32, Arduino, and PLC systems, integrating hardware and software to automate, control, and connect real-world devices."
+                        title="Sistemas Embebidos"
+                        desc="Construcción de soluciones embebidas con sistemas ESP32, Arduino y PLC, integrando hardware y software para automatizar, controlar y conectar dispositivos del mundo real."
                         icons={[
                             esp32Icon,
                             arduinoIcon,
@@ -120,8 +120,8 @@ export default function MyServices() {
                     />,
 
                     <ServiceItem
-                        title="Data Science"
-                        desc="Extracting insights from data using Python and SQL with Pandas, NumPy, and visualization tools, plus designing efficient databases for reliable data-driven decisions."
+                        title="Ciencia de Datos"
+                        desc="Extracción de insights de datos usando Python y SQL con Pandas, NumPy y herramientas de visualización, además de diseñar bases de datos eficientes para decisiones confiables basadas en datos."
                         icons={[
                             pythonIcon,
                             numpyIcon,
@@ -132,8 +132,8 @@ export default function MyServices() {
                     />,
 
                     <ServiceItem
-                        title="Scripting (Web Scraping & Automation)"
-                        desc="Automating repetitive tasks and collecting structured data from the web through custom scripts, improving efficiency and unlocking valuable information for your projects."
+                        title="Scripting (Web Scraping & Automatización)"
+                        desc="Automatización de tareas repetitivas y recolección de datos estructurados de la web mediante scripts personalizados, mejorando la eficiencia y desbloqueando información valiosa para tus proyectos."
                         icons={[
                             pythonIcon,
                             beautifulsoupIcon,
