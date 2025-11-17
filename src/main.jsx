@@ -5,6 +5,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <div className="relative w-full overflow-hidden min-h-screen text-white leading-relaxed">
+      <App />
+    </div>
   </StrictMode>,
 )

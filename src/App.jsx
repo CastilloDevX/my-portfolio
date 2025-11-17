@@ -1,11 +1,25 @@
-import './App.css'
+import "./App.css";
+import MyPresentation from "./components/MyPresentation";
+import AboutMe from "./components/AboutMe";
+import Achievements from "./components/Achievements";
+import Services from "./components/Services";
+import Experience from "./components/Experience";
+import Clients from "./components/Clients";
+import Contact from "./components/Contact";
+
+
 function App() {
   return (
     <div>
-      <h1>My Portfolio</h1>
-      <h2>Jose Manuel Castillo Queh</h2>
+      <MyPresentation />
+      <AboutMe />
+      <Achievements />
+      <Services />
+      <Experience />
+      <Clients />
+      <Contact />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
