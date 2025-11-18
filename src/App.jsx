@@ -7,7 +7,6 @@ import Experience from "./components/Experience";
 import Clients from "./components/Clients";
 import Contact from "./components/Contact";
 
-
 function App() {
   return (
     <div>
