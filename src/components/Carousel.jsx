@@ -39,11 +39,11 @@ export default function Carousel({
             <div
               key={"zero-placeholder"}
               className={`
-                                my-5
-                                flex-shrink-0 flex justify-center items-center
-                                transition-all duration-500
-                                ${mode && "w-[33%]"}
-                            `}
+                  md:my-5
+                  flex-shrink-0 flex justify-center items-center
+                  transition-all duration-500
+                  ${mode && "w-[32%] sm:w-[33%]"}
+              `}
             ></div>
           )}
           {items.map((item, index) => {
@@ -72,16 +72,16 @@ export default function Carousel({
                 <div className={`transition-all duration-500 ${scaleClass}`}>
                   <Fx
                     color={"blue"}
-                    position={"left-[-50px]"}
+                    position={"left-[0%] md:left-[-50px]"}
                     className={`
-                                            ${
-                                              fxPerElement && index === current
-                                                ? "opacity-100"
-                                                : "opacity-0"
-                                            }
-                                            duration-500
-                                            scale-50
-                                        `}
+                        ${
+                          fxPerElement && index === current
+                            ? "opacity-100"
+                            : "opacity-0"
+                        }
+                        duration-500
+                        scale-50
+                    `}
                   />
                   {item}
                 </div>
@@ -94,16 +94,16 @@ export default function Carousel({
       </div>
 
       {/* BULLETS */}
-      <div className="flex space-x-2 mt-[60px]">
+      <div className="flex space-x-2 mt-[30px] sm:mt-[60px]">
         {items.length > 1 &&
           items.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
               className={`
-                                w-3 h-3 rounded-full transition
-                                ${i === current ? "bg-white" : "bg-gray-500"}
-                            `}
+                  w-3 h-3 rounded-full transition
+                  ${i === current ? "bg-white" : "bg-gray-500"}
+              `}
             />
           ))}
       </div>

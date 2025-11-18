@@ -7,7 +7,7 @@ import client1 from "../assets/images/clients/pia-project.jpeg";
 export default function Experience() {
   return (
     <div className="section-wrapper">
-      <div>
+      <div className="px-4 sm:px-6 md:px-8">
         <Title>Clientes</Title>
         <Carousel
           mode="single"
@@ -40,24 +40,24 @@ function ClientTestimonial({
 }) {
   return (
     <div
-      className="w-full max-w-[1000px] p-10 rounded-lg 
-            border border-white/20 flex gap-4 "
+      className="p-4 sm:p-6 md:p-8 lg:p-10 w-full max-w-[1000px] mx-auto rounded-lg 
+            border border-white/20 flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8"
     >
-      <div className="flex items-center">
+      <div className="flex items-center justify-center flex-shrink-0">
         <img
-          className="rounded-full min-w-[300px]"
+          className="rounded-full w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] object-cover aspect-square"
           src={clientAvatar}
           alt="Client avatar"
         />
       </div>
 
-      <div className="flex items-center justify-center flex-col">
-        <p className="text-white font-semibold text-xl italic mb-4">
+      <div className="flex items-center justify-center flex-col text-center lg:text-left">
+        <p className="text-white font-semibold text-base sm:text-base md:text-lg lg:text-xl italic mb-3 sm:mb-4 break-words">
           "{testimonial}"
         </p>
 
-        <p>
-          <span className="font-bold text-xl">{clientName}</span>,{" "}
+        <p className="text-sm sm:text-base md:text-lg break-words">
+          <span className="font-bold text-lg sm:text-xl md:text-2xl">{clientName}</span>,{" "}
           {clientPosition}
         </p>
       </div>

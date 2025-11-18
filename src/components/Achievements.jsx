@@ -76,12 +76,15 @@ function AchievementCard({ image, year, desc, place }) {
 
   return (
     <div className="text-white text-center rounded-xl">
-      <div className="mb-5 relative">
-        <img src={image} alt="World Image" className="w-80 h-80 mx-auto" />
+      <div className="mb-5 relative flex justify-center items-center">
+        <img src={image} alt="World Image" 
+          className="w-60 h-60 md:w-80 md:h-80 mx-auto" 
+        />
 
         {place && (
           <div
-            className={`absolute top-3 right-3
+            className={`
+                    absolute top-3 right-3
                     text-white 
                     font-bold text-2xl px-4 py-2 rounded-full
                     ${bgColor}
@@ -93,8 +96,8 @@ function AchievementCard({ image, year, desc, place }) {
       </div>
 
       <div>
-        <h3 className="font-bold text-5xl mb-3">{year}</h3>
-        <p className="text-3xl mb-3">{desc}</p>
+        <h3 className="font-bold text-4xl sm:text-5xl mb-3">{year}</h3>
+        <p className="text-2xl sm:text-3xl mb-3">{desc}</p>
       </div>
     </div>
   );

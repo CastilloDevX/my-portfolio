@@ -4,10 +4,10 @@ import Fx from "../components/Fx.jsx";
 export default function AboutMe() {
   return (
     <div className="section-wrapper">
-      <section class="py-16 px-6 md:px-12">
+      <section class="pb-16 pt-8 px-6 md:px-12">
         <Title>Sobre mí</Title>
 
-        <p class="px-[200px] mx-auto text-center text-2xl leading-loose">
+        <p class="w-full max-w-[1000px] mx-auto text-center text-lg lg:text-2xl leading-loose">
           Soy Jose Manuel Castillo Queh, un desarrollador de software apasionado
           por la innovación y la resolución de problemas sociales. Desde mis
           primeras líneas de código en 2018 hasta los proyectos actuales, he

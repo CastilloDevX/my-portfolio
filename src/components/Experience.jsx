@@ -89,7 +89,7 @@ function ExperienceItem({
 }) {
   return (
     <div
-      className={`relative w-[100%] max-w-[460px] ${
+      className={`px-10 md:px-0 relative w-[100%] max-w-[460px] ${
         leftAligned ? "text-left" : "text-right"
       }`}
     >

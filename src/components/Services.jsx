@@ -160,20 +160,14 @@ export default function MyServices() {
 
 function ServiceItem({ title, desc, icons}) {
     return (
-        <div className="">
-            <h3 
-                className="text-5xl text-center mb-5 font-semibold"
-            >
+        <div className="w-[300px] sm:w-[600px] lg:w-[1000px] text-center flex flex-col justify-center items-center">
+            <p className="font-bold text-3xl sm:text-4xl md:text-5xl">
                 {title}
-            </h3>
+            </p>
 
-            <Carousel3D
-                items={icons}
-                speed={2500}
-            />
-            <p 
-                className="text-3xl text-center max-w-3xl mx-auto mt-10"
-            >
+            <Carousel3D items={icons} speed={1500} />
+
+            <p className="sm:px-20 text-xl sm:text-2xl">
                 {desc}
             </p>
         </div>

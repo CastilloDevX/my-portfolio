@@ -20,11 +20,25 @@
 
 .section-wrapper {
   position: relative;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 body {
   background-color: #000000;
+}
+/* Responsive */
+/* md */
+@media (width >= 48rem) {
+  .section-wrapper {
+    margin-top: 50px;
+  }
+}
+
+/* lg */
+@media (width >= 64rem) {
+  .section-wrapper {
+    margin-top: 100px;
+  }
 }
 
 /* FONTS */
