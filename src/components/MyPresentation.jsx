@@ -1,6 +1,9 @@
 import me from "../assets/images/me-roblox.png";
 import Fx from "../components/Fx.jsx";
 
+import shape1 from "../assets/images/shapes/shape1.svg"
+import shape2 from "../assets/images/shapes/shape2.svg"
+
 function MyPresentation() {
   return (
     <div className="relative">
@@ -33,6 +36,31 @@ function MyPresentation() {
             className="right-[50%] lg:right-[-10%]"
             translateX={"0%"}
             translateY={"0%"}
+        />
+
+       <img 
+            src={shape1} 
+            alt="Shape 1" 
+            className="
+                absolute z-0
+                top-[-35px] sm:top-[0px] md:top-[-15px] lg:top-[-50px] 
+                right-[0px] sm:right-[25px] md:right-[50px] lg:right-[100px] 
+                w-[150px] md:w-[250px] lg:w-[300px]
+                rotate-[15deg] lg:rotate-[5deg]
+            "
+        />
+
+        <img 
+            src={shape2} 
+            alt="Shape 2" 
+            className="
+                absolute 
+                left-0 sm:left-[50px] lg:left-[calc(50%)]
+                bottom-[-100px] lg-[-75px]
+                
+                w-[185px] md:w-[250px] lg:w-[300px]
+                rotate-[5deg]
+            "
         />
     </div>
   );

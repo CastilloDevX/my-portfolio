@@ -1,6 +1,8 @@
 import Title from "../components/Title.jsx";
 import Fx from "../components/Fx.jsx";
 
+import shape3 from "../assets/images/shapes/shape3.svg"
+
 export default function Experience() {
   return (
     <div className="section-wrapper">
@@ -25,6 +27,21 @@ export default function Experience() {
 
       <Fx color={"purple"} position={"left-[-20%] top-[0px]"} />
       <Fx color={"purple"} position={"right-[-20%] top-[100px]"} />
+
+      <img 
+          src={shape3} 
+          alt="Shape 3" 
+          className="
+              hidden
+              absolute z-0
+              top-[-75px] sm:top-[-70px] md:top-[-80px] lg:top-[-150px]
+              left-[-20px] sm:left-0 md:left-[20px] lg:left-[10%]
+              w-[150px] md:w-[180px] lg:w-[250px]
+
+              rotate-[0deg]
+          "
+      />
+
     </div>
   );
 }
