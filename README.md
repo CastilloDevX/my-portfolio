@@ -1,16 +1,32 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio personal construido con React, Vite y Tailwind CSS.
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `npm run dev`: inicia el entorno de desarrollo.
+- `npm run build`: genera la version de produccion.
+- `npm run lint`: revisa el codigo con ESLint.
+- `npm run preview`: sirve el build localmente.
 
-## React Compiler
+## Estructura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La base del proyecto se reorganizo para que cada capa tenga una responsabilidad clara:
 
-## Expanding the ESLint configuration
+```text
+src/
+  app/          # composicion principal de la aplicacion
+  components/   # piezas reutilizables (cards, layout, motion, ui)
+  data/         # contenido centralizado del portafolio
+  hooks/        # hooks reutilizables
+  sections/     # secciones completas de la landing
+  styles/       # estilos globales, fuentes y animaciones
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Animaciones
+
+Se agrego un sistema sencillo de reveal on scroll con `IntersectionObserver`.
+
+- Los textos principales aparecen al entrar en viewport.
+- Los carouseles tambien se activan al hacer scroll.
+- Se respeta `prefers-reduced-motion` para accesibilidad.
