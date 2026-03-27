@@ -1,4 +1,5 @@
 import PageShell from "../components/layout/PageShell.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import AboutSection from "../sections/AboutSection.jsx";
 import AchievementsSection from "../sections/AchievementsSection.jsx";
 import ClientsSection from "../sections/ClientsSection.jsx";
@@ -9,15 +10,18 @@ import ServicesSection from "../sections/ServicesSection.jsx";
 
 function App() {
   return (
-    <PageShell>
-      <HeroSection />
-      <AboutSection />
-      <AchievementsSection />
-      <ServicesSection />
-      <ExperienceSection />
-      <ClientsSection />
-      <ContactSection />
-    </PageShell>
+    <>
+      <PageShell>
+        <HeroSection />
+        <AboutSection />
+        <AchievementsSection />
+        <ServicesSection />
+        <ExperienceSection />
+        <ClientsSection />
+        <ContactSection />
+      </PageShell>
+      <SpeedInsights />
+    </>
   );
 }
 
