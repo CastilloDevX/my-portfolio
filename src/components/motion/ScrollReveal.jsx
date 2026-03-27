@@ -1,3 +1,4 @@
+import { createElement } from "react";
 import useScrollReveal from "../../hooks/useScrollReveal.js";
 
 export default function ScrollReveal({
@@ -11,13 +12,13 @@ export default function ScrollReveal({
     threshold: variant === "carousel" ? 0.12 : 0.18,
   });
 
-  return (
-    <Tag
-      ref={ref}
-      className={`scroll-reveal scroll-reveal--${variant} ${isVisible ? "is-visible" : ""} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </Tag>
+  return createElement(
+    Tag,
+    {
+      ref,
+      className: `scroll-reveal scroll-reveal--${variant} ${isVisible ? "is-visible" : ""} ${className}`,
+      style: { transitionDelay: `${delay}ms` },
+    },
+    children
   );
 }
