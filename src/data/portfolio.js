@@ -1,5 +1,6 @@
 import meImage from "../assets/images/me-roblox.png";
 import client1 from "../assets/images/clients/pia-project.jpeg";
+import brukyon from "../assets/images/clients/brukyon.webp";
 import arduinoIcon from "../assets/images/icons/arduino.svg";
 import beautifulSoupIcon from "../assets/images/icons/beautiful-soup.svg";
 import bootstrapIcon from "../assets/images/icons/bootstrap.svg";
@@ -231,6 +232,13 @@ export const clients = [
     clientPosition: "Founder",
     testimonial:
       "Jose Manuel ha sido una experiencia sumamente positiva. Desde el inicio, demostró un alto nivel de responsabilidad y compromiso con cada tarea asignada. Tiene una gran capacidad para aprender por cuenta propia y adaptarse rápidamente a nuevos entornos o tecnologías, lo que fue clave para el éxito del proyecto.",
+  },
+  {
+    clientAvatar: brukyon,
+    clientName: "Quick Coins",
+    clientPosition: "Founder",
+    testimonial:
+      "Trabajar con Jose Manuel en mi juego de Roblox ha sido una experiencia impecable. Destaco por encima de todo su sinceridad y atención; siempre estuvo disponible para resolver cualquier duda. Manteníamos llamadas constantes para revisar avances, lo que me dio mucha tranquilidad. Además, su responsabilidad es total: si los estudios le requerían tiempo, me avisaba con días de antelación. En resumen, un profesional educado, responsable y altamente comprometido.",
   },
 ];
 

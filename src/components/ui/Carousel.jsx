@@ -1,16 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import GlowOrb from "../common/GlowOrb.jsx";
 import ScrollReveal from "../motion/ScrollReveal.jsx";
 
 export default function Carousel({
   items = [],
   mode = "single",
-  autoPlay = true,
+  autoPlay = false,
   autoPlayTime = 4000,
   fxPerElement = false,
   className = "",
 }) {
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef(null);
   const total = items.length;
   const currentIndex = total ? current % total : 0;
 
@@ -32,10 +33,40 @@ export default function Carousel({
 
   const next = () => setCurrent((previous) => (previous + 1) % total);
   const prev = () => setCurrent((previous) => (previous - 1 + total) % total);
+  const handleTouchStart = (event) => {
+    touchStartX.current = event.touches[0]?.clientX ?? null;
+  };
+  const handleTouchEnd = (event) => {
+    const startX = touchStartX.current;
+    const endX = event.changedTouches[0]?.clientX ?? null;
+
+    touchStartX.current = null;
+
+    if (startX === null || endX === null) {
+      return;
+    }
+
+    const distance = startX - endX;
+
+    if (Math.abs(distance) < 40) {
+      return;
+    }
+
+    if (distance > 0) {
+      next();
+      return;
+    }
+
+    prev();
+  };
 
   return (
     <ScrollReveal variant="carousel" className={className}>
-      <div className="relative overflow-visible px-2 py-4 md:px-6 md:py-8">
+      <div
+        className="relative overflow-visible px-2 py-4 md:px-6 md:py-8"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="relative flex items-center justify-center">
           {total > 1 && <CarouselButton direction="left" onClick={prev} />}
           {mode === "spotlight" ? (

@@ -29,7 +29,7 @@ export default function AchievementsSection() {
 
           <Carousel
             mode="spotlight"
-            autoPlay
+            autoPlay={false}
             items={achievements.map((achievement) => (
               <AchievementCard key={`${achievement.year}-${achievement.description}`} {...achievement} />
             ))}

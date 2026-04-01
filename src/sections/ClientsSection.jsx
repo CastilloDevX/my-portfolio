@@ -27,7 +27,7 @@ export default function ClientsSection() {
 
         <Carousel
           mode="single"
-          autoPlay
+          autoPlay={false}
           items={clients.map((client) => (
             <ClientCard key={client.clientName} {...client} />
           ))}
