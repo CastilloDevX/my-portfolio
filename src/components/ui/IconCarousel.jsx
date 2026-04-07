@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "../motion/ScrollReveal.jsx";
 
-export default function IconCarousel({ items = [], autoPlay = false, speed = 1800 }) {
+export default function IconCarousel({ items = [], autoPlay = true, speed = 1800 }) {
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef(null);
   const total = items.length;
@@ -58,7 +58,6 @@ export default function IconCarousel({ items = [], autoPlay = false, speed = 180
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {total > 1 && <CarouselButton direction="left" onClick={prev} />}
         <div className="relative flex h-full w-full items-center justify-center">
           {items.map((item, index) => {
             const offset = getOffset(index, current, total);
@@ -83,26 +82,8 @@ export default function IconCarousel({ items = [], autoPlay = false, speed = 180
             );
           })}
         </div>
-        {total > 1 && <CarouselButton direction="right" onClick={next} />}
       </div>
     </ScrollReveal>
-  );
-}
-
-function CarouselButton({ direction, onClick }) {
-  const isLeft = direction === "left";
-
-  return (
-    <button
-      type="button"
-      aria-label={isLeft ? "Icono anterior" : "Siguiente icono"}
-      onClick={onClick}
-      className={`absolute top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/5 text-lg font-semibold text-white transition duration-300 hover:scale-110 hover:border-white/50 hover:bg-white hover:text-[#110020] ${
-        isLeft ? "left-1 md:left-2" : "right-1 md:right-2"
-      }`}
-    >
-      {isLeft ? "<" : ">"}
-    </button>
   );
 }
 
