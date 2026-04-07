@@ -208,7 +208,7 @@ export const experiences = [
     accent: "blue",
   },
   {
-    title: "Sportscrap (Coming Soon)",
+    title: "Ploostream",
     type: "Proyecto Freelance",
     details:
       "Sportscrap es una plataforma web que automatiza la obtención y actualización de datos deportivos mediante scraping profesional. Resuelve la falta de APIs fiables o gratuitas en el sector, permitiendo ofrecer estadísticas limpias, actualizadas y listas para consumo. Su impacto es clave para comunidades deportivas, páginas de resultados y empresas que requieren información en tiempo real. Es un proyecto en expansión con potencial comercial alto.",
@@ -216,7 +216,7 @@ export const experiences = [
     accent: "purple",
   },
   {
-    title: "Earn Robux for Minigames (Coming Soon)",
+    title: "Quick Coins",
     type: "Proyecto Freelance",
     details:
       "Este videojuego integra minijuegos competitivos donde los jugadores ganan monedas intercambiables por Robux mediante microtransacciones. Resuelve la necesidad de sistemas de monetización sostenibles y engagement continuo dentro de Roblox. Su impacto combina entretenimiento, economía interna y retención, ideal para plataformas con comunidades activas. Es un proyecto con fuerte potencial comercial gracias a su modelo play and earn.",
@@ -235,7 +235,7 @@ export const clients = [
   },
   {
     clientAvatar: brukyon,
-    clientName: "Quick Coins",
+    clientName: "Quick Coins & Ploostream",
     clientPosition: "Founder",
     testimonial:
       "Trabajar con Jose Manuel en mi juego de Roblox ha sido una experiencia impecable. Destaco por encima de todo su sinceridad y atención; siempre estuvo disponible para resolver cualquier duda. Manteníamos llamadas constantes para revisar avances, lo que me dio mucha tranquilidad. Además, su responsabilidad es total: si los estudios le requerían tiempo, me avisaba con días de antelación. En resumen, un profesional educado, responsable y altamente comprometido.",
