@@ -4,8 +4,8 @@ import AboutSection from "../sections/AboutSection.jsx";
 import AchievementsSection from "../sections/AchievementsSection.jsx";
 import ClientsSection from "../sections/ClientsSection.jsx";
 import ContactSection from "../sections/ContactSection.jsx";
-import ExperienceSection from "../sections/ExperienceSection.jsx";
 import HeroSection from "../sections/HeroSection.jsx";
+import ProjectsSection from "../sections/ProjectsSection.jsx";
 import ServicesSection from "../sections/ServicesSection.jsx";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <AboutSection />
         <AchievementsSection />
         <ServicesSection />
-        <ExperienceSection />
+        <ProjectsSection />
         <ClientsSection />
         <ContactSection />
       </PageShell>

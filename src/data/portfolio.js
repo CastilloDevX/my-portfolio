@@ -33,6 +33,14 @@ import localImg from "../assets/images/shapes/local-place.svg";
 import mexicoImg from "../assets/images/shapes/mexico.svg";
 import worldImg from "../assets/images/shapes/world.svg";
 
+import seasonServicePreview from "../assets/images/previews/SeasonService.png";
+import movikooxPreview from "../assets/images/previews/Movikoox.png";
+import miniDBeaverPreview from "../assets/images/previews/MiniDBeaver.png";
+import spaceVisionPreview from "../assets/images/previews/SpaceVision.png";
+import mortalRunPreview from "../assets/images/previews/MortalRun.png";
+import imKingPreview from "../assets/images/previews/ImKing.png";
+
+
 export const heroContent = {
   role: "Soy desarrollador de software",
   name: ["Jose Manuel", "Castillo Queh"],
@@ -166,6 +174,274 @@ export const services = [
   },
 ];
 
+export const featuredProjects = [
+  {
+    id: "season-service",
+    sortDate: "2026-03-18",
+    createdAt: "Marzo 2026",
+    title: "Season Service",
+    category: "Modulo Open Source para Roblox",
+    status: "Open Source",
+    accent: "cyan",
+    previewAccent: "#67e8f9",
+    previewSurface:
+      "radial-gradient(circle at 14% 18%, rgba(103,232,249,0.34), transparent 26%), radial-gradient(circle at 82% 22%, rgba(59,130,246,0.28), transparent 24%), linear-gradient(135deg, rgba(8,24,40,0.96), rgba(10,18,36,0.9) 50%, rgba(5,8,18,0.98))",
+    previewLabel: "Espacio para screenshot del modulo",
+    previewNote:
+      "Aqui podras colocar una captura de la documentacion, del API o del flujo de recompensas.",
+    previewImage: seasonServicePreview,
+    summary:
+      "Season Service es un modulo open source que busca darle a la comunidad de Roblox una base limpia para manejar temporadas, progreso y eventos con una API clara. Su enfoque esta en reutilizacion, orden y documentacion para que otros desarrolladores puedan integrarlo rapido en sus juegos.",
+    stack: ["LuaU", "Roblox", "Open Source", "Docs"],
+    repositories: [],
+    previews: [
+      projectLink("Documentacion", "https://mratomdev.vercel.app/docs/season-service"),
+    ],
+  },
+  {
+    id: "movikoox",
+    sortDate: "2025-12-14",
+    createdAt: "Diciembre 2025",
+    title: "Movikoox",
+    category: "Ecosistema de movilidad urbana",
+    status: "En desarrollo",
+    accent: "cyan",
+    previewAccent: "#7dd3fc",
+    previewSurface:
+      "radial-gradient(circle at 16% 18%, rgba(56,189,248,0.34), transparent 24%), radial-gradient(circle at 76% 20%, rgba(14,165,233,0.24), transparent 22%), linear-gradient(135deg, rgba(9,30,51,0.95), rgba(18,40,84,0.88) 52%, rgba(6,15,29,0.98))",
+    previewLabel: "Espacio para preview de app y API",
+    previewNote:
+      "Este bloque queda listo para mostrar capturas de la app cliente, el mapa o el panel de endpoints.",
+    previewImage: movikooxPreview,
+    summary:
+      "Movikoox agrupa el trabajo de la API y la aplicacion cliente del proyecto KO'OX para acercar informacion de movilidad a la ciudadania campechana. La API centraliza datos utiles para integraciones y la app consume esa informacion para ofrecer una experiencia practica, accesible y lista para seguir creciendo.",
+    stack: ["JavaScript", "Frontend", "API REST", "Vercel"],
+    repositories: [
+      projectLink("GitHub API", "https://github.com/CastilloDevX/movikoox"),
+      projectLink("GitHub App", "https://github.com/CastilloDevX/koox"),
+    ],
+    previews: [
+      projectLink("Website", "https://movikoox.vercel.app"),
+      projectLink("App en vivo", "https://movikooxweb.vercel.app"),
+    ],
+  },
+  {
+    id: "minidbeaver",
+    sortDate: "2025-10-15",
+    createdAt: "Octubre 2025",
+    title: "MiniDBeaver",
+    category: "Herramienta de escritorio",
+    status: "Prototipo",
+    accent: "emerald",
+    previewAccent: "#1E1A19",
+    previewSurface:
+      "radial-gradient(circle at 18% 20%, rgba(110,231,183,0.3), transparent 26%), radial-gradient(circle at 80% 20%, rgba(45,212,191,0.2), transparent 24%), linear-gradient(135deg, rgba(9,33,28,0.96), rgba(12,48,40,0.88) 54%, rgba(6,12,14,0.98))",
+    previewLabel: "Espacio para screenshot del cliente SQL",
+    previewNote:
+      "Puedes poner aqui una captura de tablas, conexiones o resultados de consulta.",
+    previewImage: miniDBeaverPreview,
+    summary:
+      "MiniDBeaver es una propuesta de herramienta de escritorio inspirada en flujos de trabajo de clientes SQL como DBeaver, pero orientada a una experiencia mas ligera, directa y experimental. Su valor esta en simplificar conexiones, exploracion de estructuras y validacion rapida de consultas.",
+    stack: ["Java", "SQL", "Desktop UI", "Productividad"],
+    repositories: [
+      projectLink("GitHub", "https://github.com/CastilloDevX/MiniDBeaver"),
+    ],
+    previews: [],
+  },
+  {
+    id: "space-vision",
+    sortDate: "2025-10-04",
+    createdAt: "Octubre 2025",
+    title: "SpaceVision",
+    category: "Proyecto NASA Space Apps",
+    status: "Top 4",
+    accent: "violet",
+    previewAccent: "#f0abfc",
+    previewSurface:
+      "radial-gradient(circle at 18% 18%, rgba(232,121,249,0.3), transparent 26%), radial-gradient(circle at 76% 18%, rgba(96,165,250,0.2), transparent 22%), linear-gradient(135deg, rgba(25,14,43,0.96), rgba(44,20,67,0.88) 54%, rgba(7,10,24,0.98))",
+    previewLabel: "Espacio para vista del sitio NASA",
+    previewNote:
+      "Aqui podras colocar la portada visual, dashboards solares o escenas del proyecto.",
+    previewImage: spaceVisionPreview,
+    summary:
+      "SpaceVision es una plataforma educativa interactiva creada para NASA Space Apps Challenge, pensada para transformar datos cientificos en una experiencia visual clara y atractiva. El proyecto destaca por su enfoque STEM, su capa visual y el resultado obtenido como Top 4.",
+    stack: ["HTML", "CSS", "JavaScript", "STEM"],
+    repositories: [
+      projectLink("GitHub", "https://github.com/CastilloDevX/SpaceVision"),
+    ],
+    previews: [
+      projectLink("Sitio en vivo", "https://space-vision.vercel.app"),
+    ],
+  },
+  {
+    id: "mortal-run",
+    sortDate: "2025-08-16",
+    createdAt: "Agosto 2025",
+    title: "Mortal Run",
+    category: "Videojuego web",
+    status: "Jugable",
+    accent: "emerald",
+    previewAccent: "#fcd34d",
+    previewSurface:
+      "radial-gradient(circle at 18% 18%, rgba(250,204,21,0.28), transparent 25%), radial-gradient(circle at 80% 24%, rgba(34,197,94,0.18), transparent 24%), linear-gradient(135deg, rgba(33,18,10,0.96), rgba(48,29,14,0.88) 50%, rgba(14,15,18,0.98))",
+    previewLabel: "Espacio para gameplay de Mortal Run",
+    previewNote:
+      "Ideal para poner una captura del nivel, interfaz de juego o momentos de plataforma.",
+    previewImage: mortalRunPreview,
+    summary:
+      "Mortal Run es un juego hibrido 2D/3D con mecanicas de plataformas, doble salto, habilidades y progresion. Sirve como demostracion de tu capacidad para construir experiencias jugables con personalidad, cuidando sensacion de movimiento, ritmo y presentacion.",
+    stack: ["Gameplay", "Diseño de niveles", "Web", "Marca personal"],
+    repositories: [],
+    previews: [
+      projectLink("Jugar ahora", "https://mratomdev.vercel.app/games/mortal-run"),
+    ],
+  },
+  {
+    id: "im-king",
+    sortDate: "2025-07-08",
+    createdAt: "Julio 2025",
+    title: "I'm King",
+    category: "Videojuego web",
+    status: "Publicado",
+    accent: "amber",
+    previewAccent: "#fbbf24",
+    previewSurface:
+      "radial-gradient(circle at 18% 20%, rgba(251,191,36,0.32), transparent 24%), radial-gradient(circle at 80% 22%, rgba(245,158,11,0.18), transparent 22%), linear-gradient(135deg, rgba(45,24,10,0.96), rgba(73,38,13,0.88) 52%, rgba(14,12,10,0.98))",
+    previewLabel: "Espacio para gameplay de I'm King",
+    previewImage: imKingPreview,
+    previewNote:
+      "Aqui podras mostrar pantalla inicial, puntuaciones o una escena representativa del juego.",
+    summary:
+      "I'm King es un juego web enfocado en partidas cortas, lectura visual inmediata y una sensacion arcade mas directa. Funciona muy bien dentro del portafolio porque muestra variedad en tu trabajo de gameplay y en la construccion de experiencias ligeras listas para jugar desde el navegador.",
+    stack: ["Arcade", "Game feel", "Web", "Marca personal"],
+    repositories: [],
+    previews: [
+      projectLink("Jugar ahora", "https://mratomdev.vercel.app/games/im-king"),
+    ],
+  },
+  {
+    id: "electrorbit",
+    sortDate: "2024-11-16",
+    createdAt: "Noviembre 2024",
+    title: "Electrorbit",
+    category: "Herramienta visual de quimica",
+    status: "Publicado",
+    accent: "violet",
+    previewAccent: "#c084fc",
+    previewSurface:
+      "radial-gradient(circle at 16% 18%, rgba(192,132,252,0.3), transparent 26%), radial-gradient(circle at 80% 20%, rgba(168,85,247,0.18), transparent 22%), linear-gradient(135deg, rgba(25,12,36,0.96), rgba(43,20,62,0.88) 52%, rgba(11,10,20,0.98))",
+    previewLabel: "Espacio para preview de la tabla periodica",
+    previewNote:
+      "Reserva este lugar para mostrar la tabla, configuraciones o la navegacion principal.",
+    summary:
+      "Electrorbit presenta los elementos quimicos desde una experiencia mas visual y practica, con un enfoque especial en configuracion electronica. El proyecto acerca conceptos de quimica a estudiantes y curiosos mediante una navegacion clara y una consulta inmediata.",
+    stack: ["HTML", "CSS", "JavaScript", "Educacion STEM"],
+    repositories: [
+      projectLink("GitHub", "https://github.com/CastilloDevX/electrorbit"),
+      projectLink("Website", "https://castillodevx.github.io/electrorbit/")
+    ],
+    previews: [],
+  },
+  {
+    id: "salud-plus",
+    sortDate: "2024-04-04",
+    createdAt: "Abril 2024",
+    title: "SaludPlus",
+    category: "API medica de hackathon",
+    status: "Hackathon",
+    accent: "cyan",
+    previewAccent: "#93c5fd",
+    previewSurface:
+      "radial-gradient(circle at 18% 18%, rgba(147,197,253,0.3), transparent 24%), radial-gradient(circle at 78% 20%, rgba(34,211,238,0.18), transparent 24%), linear-gradient(135deg, rgba(12,27,43,0.96), rgba(15,40,68,0.88) 52%, rgba(10,14,21,0.98))",
+    previewLabel: "Espacio para preview clinico del proyecto",
+    previewNote:
+      "Aqui podras mostrar flujos de conversion DICOM, galerias o endpoints de la API.",
+    summary:
+      "SaludPlus es una API medica que convierte archivos DICOM en imagenes y GIFs accesibles sin infraestructura pesada. El proyecto fue planteado para simplificar la visualizacion de estudios, mejorar la experiencia del paciente y acercar herramientas modernas al sector salud.",
+    stack: ["API", "DICOM", "Imagenes", "Salud"],
+    repositories: [
+      projectLink("GitHub", "https://github.com/CastilloDevX/SaludPlus"),
+    ],
+    previews: [],
+  },
+  {
+    id: "beesmath",
+    sortDate: "2023-09-24",
+    createdAt: "Septiembre 2023",
+    title: "Beesmath",
+    category: "Experiencia web educativa",
+    status: "Publicado",
+    accent: "amber",
+    previewAccent: "#fcd34d",
+    previewSurface:
+      "radial-gradient(circle at 16% 18%, rgba(252,211,77,0.34), transparent 26%), radial-gradient(circle at 80% 20%, rgba(251,191,36,0.2), transparent 24%), linear-gradient(135deg, rgba(51,30,11,0.96), rgba(74,40,14,0.88) 52%, rgba(22,14,16,0.98))",
+    previewLabel: "Espacio para captura del sitio educativo",
+    previewNote:
+      "La zona queda lista para una imagen del home, actividades o dinamicas para ninos.",
+    summary:
+      "Beesmath es una pagina web disenada para ninos de 3 a 6 años donde aprender a contar se vuelve una experiencia ludica, amable y facil de explorar. La propuesta combina interacciones claras, feedback visual y recursos sonoros para reforzar el aprendizaje en edades tempranas.",
+    stack: ["JavaScript", "HTML", "CSS", "UX infantil"],
+    repositories: [
+      projectLink("GitHub", "https://github.com/CastilloDevX/beesmath"),
+    ],
+    previews: [],
+  },
+  {
+    id: "educamp",
+    sortDate: "2023-08-20",
+    createdAt: "Agosto 2023",
+    title: "EduCamp",
+    category: "Proyecto de hackathon educativo",
+    status: "Hackathon",
+    accent: "emerald",
+    previewAccent: "#6ee7b7",
+    previewSurface:
+      "radial-gradient(circle at 16% 18%, rgba(110,231,183,0.3), transparent 24%), radial-gradient(circle at 80% 20%, rgba(74,222,128,0.18), transparent 22%), linear-gradient(135deg, rgba(9,34,27,0.96), rgba(13,53,36,0.88) 54%, rgba(7,12,14,0.98))",
+    previewLabel: "Espacio para capturas de EduCamp",
+    previewNote:
+      "Puedes mostrar aqui el concepto principal o la landing construida para la propuesta.",
+    summary:
+      "EduCamp reune la idea de hackathon y su presentacion web en un mismo proyecto destacado. Te ayuda a mostrar no solo la solucion planteada, sino tambien tu capacidad para empaquetarla visualmente en una experiencia mas clara, navegable y lista para presentar.",
+    stack: ["Hackathon", "Web", "Presentacion", "Educacion"],
+    repositories: [
+      projectLink(
+        "GitHub Proyecto",
+        "https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Edu-Camp"
+      ),
+      projectLink(
+        "GitHub Web",
+        "https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Edu-Camp-Web"
+      ),
+    ],
+    previews: [],
+  },
+  {
+    id: "eco-style",
+    sortDate: "2022-09-18",
+    createdAt: "Septiembre 2022",
+    title: "EcoStyle",
+    category: "Concepto web de sostenibilidad",
+    status: "Concepto",
+    accent: "emerald",
+    previewAccent: "#86efac",
+    previewSurface:
+      "radial-gradient(circle at 18% 18%, rgba(134,239,172,0.3), transparent 24%), radial-gradient(circle at 80% 22%, rgba(74,222,128,0.18), transparent 22%), linear-gradient(135deg, rgba(12,31,19,0.96), rgba(18,54,29,0.88) 52%, rgba(8,12,11,0.98))",
+    previewLabel: "Espacio para preview de EcoStyle",
+    previewNote:
+      "Este lugar puede mostrar visuales del concepto, branding o la propuesta de interfaz.",
+    summary:
+      "EcoStyle funciona como una pieza de concepto donde se mezcla una idea de comunicacion visual con una ejecucion web accesible para presentar el proyecto. Dentro del portafolio ayuda a mostrar variedad tematica y sensibilidad de interfaz dentro de propuestas mas creativas.",
+    stack: ["HTML", "CSS", "Concepto visual", "Presentacion"],
+    repositories: [
+      projectLink(
+        "GitHub",
+        "https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Eco-Style-main/Practicas%20VSC"
+      ),
+    ],
+    previews: [],
+  },
+];
+
 export const experiences = [
   {
     title: "Ko'ox API",
@@ -250,4 +526,8 @@ export const contactContent = {
 
 function icon(src, label) {
   return { src, label };
+}
+
+function projectLink(label, url) {
+  return { label, url };
 }

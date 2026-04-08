@@ -16,7 +16,7 @@ export default function IconCarousel({ items = [], autoPlay = true, speed = 1800
     }, speed);
 
     return () => window.clearInterval(intervalId);
-  }, [speed, total]);
+  }, [autoPlay, speed, total]);
 
   if (!total) {
     return null;
