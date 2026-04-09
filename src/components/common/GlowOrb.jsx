@@ -10,13 +10,15 @@ function GlowOrb({
     blue: "rgba(32, 125, 255, 0.28)",
     default: "rgba(255, 255, 255, 0.14)",
   };
+  const resolvedColor =
+    color?.startsWith?.("#") || color?.startsWith?.("rgb") ? color : colors[color] || colors.default;
 
   return (
     <div
       aria-hidden="true"
       className={`pointer-events-none absolute z-[-1] size-[20rem] rounded-full blur-[120px] animate-glow-float md:size-[26rem] ${position} ${className}`}
       style={{
-        backgroundColor: colors[color] || colors.default,
+        backgroundColor: resolvedColor,
         "--glow-x": translateX,
         "--glow-y": translateY,
       }}

@@ -79,14 +79,14 @@ export default function ProjectsSection() {
     <PageSection id="projects" className="xl:min-h-[100svh]">
       <div className="relative mx-auto max-w-7xl">
         <GlowOrb
-          color="purple"
+          color={toGlowColor(activeProject.previewAccent, 0.28)}
           position="left-1/2 top-[28%]"
           translateX="-80%"
           translateY="-30%"
           className="scale-[0.95] opacity-90"
         />
         <GlowOrb
-          color="blue"
+          color={toGlowColor(activeProject.previewAccentAlt ?? activeProject.previewAccent, 0.24)}
           position="left-1/2 top-[62%]"
           translateX="8%"
           translateY="-30%"
@@ -160,13 +160,6 @@ export default function ProjectsSection() {
 }
 
 function TimelineButton({ isActive, onClick, project }) {
-  const accentMap = {
-    amber: "from-amber-300/20 via-orange-300/6 to-transparent border-amber-200/20",
-    violet: "from-fuchsia-300/18 via-violet-300/8 to-transparent border-fuchsia-200/20",
-    emerald: "from-emerald-300/18 via-teal-300/8 to-transparent border-emerald-200/20",
-    cyan: "from-cyan-300/18 via-sky-300/8 to-transparent border-cyan-200/20",
-  };
-
   return (
     <button
       type="button"
@@ -178,11 +171,16 @@ function TimelineButton({ isActive, onClick, project }) {
       }`}
     >
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${
-          accentMap[project.accent] ?? accentMap.cyan
-        } transition-opacity duration-300 ${
+        className={`absolute inset-0 transition-opacity duration-300 ${
           isActive ? "opacity-100" : "opacity-0 group-hover:opacity-80"
         }`}
+        style={{
+          background: `linear-gradient(135deg, ${toGlowColor(project.previewAccent, 0.22)}, ${toGlowColor(
+            project.previewAccentAlt ?? project.previewAccent,
+            0.08
+          )} 55%, transparent)`,
+          border: `1px solid ${toGlowColor(project.previewAccent, 0.16)}`,
+        }}
       />
       <div className="relative min-w-0">
         <h3 className="truncate text-[13px] font-semibold text-white md:text-sm">
@@ -195,4 +193,25 @@ function TimelineButton({ isActive, onClick, project }) {
 
 function formatCount(value) {
   return String(value).padStart(2, "0");
+}
+
+function toGlowColor(hex, alpha) {
+  if (!hex?.startsWith("#")) {
+    return `rgba(255, 255, 255, ${alpha})`;
+  }
+
+  const value = hex.slice(1);
+  const normalized =
+    value.length === 3
+      ? value
+          .split("")
+          .map((char) => char + char)
+          .join("")
+      : value;
+
+  const red = Number.parseInt(normalized.slice(0, 2), 16);
+  const green = Number.parseInt(normalized.slice(2, 4), 16);
+  const blue = Number.parseInt(normalized.slice(4, 6), 16);
+
+  return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
 }

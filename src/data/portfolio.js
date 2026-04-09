@@ -180,8 +180,8 @@ export const services = [
 export const featuredProjects = [
   {
     id: "season-service",
-    sortDate: "2026-03-18",
-    createdAt: "Marzo 2026",
+    sortDate: "2025-02-18",
+    createdAt: "Febrero 2025",
     title: "Season Service",
     category: "Modulo Open Source para Roblox",
     status: "Open Source",
@@ -209,15 +209,16 @@ export const featuredProjects = [
     category: "Ecosistema de movilidad urbana",
     status: "En desarrollo",
     accent: "cyan",
-    previewAccent: "#7dd3fc",
+    previewAccent: "#9f2241",
+    previewAccentAlt: "#f7d9b0",
     previewSurface:
-      "radial-gradient(circle at 16% 18%, rgba(56,189,248,0.34), transparent 24%), radial-gradient(circle at 76% 20%, rgba(14,165,233,0.24), transparent 22%), linear-gradient(135deg, rgba(9,30,51,0.95), rgba(18,40,84,0.88) 52%, rgba(6,15,29,0.98))",
+      "radial-gradient(circle at 18% 20%, rgba(159,34,65,0.28), transparent 24%), radial-gradient(circle at 78% 20%, rgba(247,217,176,0.18), transparent 22%), linear-gradient(135deg, rgba(33,12,22,0.96), rgba(68,20,38,0.9) 52%, rgba(13,10,11,0.98))",
     previewLabel: "Espacio para preview de app y API",
     previewNote:
       "Este bloque queda listo para mostrar capturas de la app cliente, el mapa o el panel de endpoints.",
     previewImage: movikooxPreview,
     summary:
-      "Movikoox agrupa el trabajo de la API y la aplicacion cliente del proyecto KO'OX para acercar informacion de movilidad a la ciudadania campechana. La API centraliza datos utiles para integraciones y la app consume esa informacion para ofrecer una experiencia practica, accesible y lista para seguir creciendo.",
+      "Movikoox nace como una iniciativa ciudadana ante la llegada de los nuevos camiones en Campeche y la falta de informacion clara para la gente. La app ayuda a consultar el transporte publico de forma gratuita, moderna y local, porque fue pensada especificamente para resolver una necesidad real de movilidad en Campeche.",
     stack: ["JavaScript", "Frontend", "API REST", "Vercel"],
     repositories: [
       projectLink("GitHub API", "https://github.com/CastilloDevX/movikoox"),
@@ -231,14 +232,15 @@ export const featuredProjects = [
   {
     id: "minidbeaver",
     sortDate: "2025-10-15",
-    createdAt: "Octubre 2025",
+    createdAt: "Noviembre 2025",
     title: "MiniDBeaver",
     category: "Herramienta de escritorio",
     status: "Prototipo",
     accent: "emerald",
-    previewAccent: "#1E1A19",
+    previewAccent: "#6f4e37",
+    previewAccentAlt: "#b08968",
     previewSurface:
-      "radial-gradient(circle at 18% 20%, rgba(110,231,183,0.3), transparent 26%), radial-gradient(circle at 80% 20%, rgba(45,212,191,0.2), transparent 24%), linear-gradient(135deg, rgba(9,33,28,0.96), rgba(12,48,40,0.88) 54%, rgba(6,12,14,0.98))",
+      "radial-gradient(circle at 18% 20%, rgba(111,78,55,0.32), transparent 26%), radial-gradient(circle at 80% 20%, rgba(176,137,104,0.2), transparent 24%), linear-gradient(135deg, rgba(33,22,17,0.96), rgba(64,42,30,0.9) 54%, rgba(12,9,8,0.98))",
     previewLabel: "Espacio para screenshot del cliente SQL",
     previewNote:
       "Puedes poner aqui una captura de tablas, conexiones o resultados de consulta.",
@@ -253,8 +255,8 @@ export const featuredProjects = [
   },
   {
     id: "space-vision",
-    sortDate: "2025-10-04",
-    createdAt: "Octubre 2025",
+    sortDate: "2025-11-04",
+    createdAt: "Novimebre 2025",
     title: "SpaceVision",
     category: "Proyecto NASA Space Apps",
     status: "Top 4",
@@ -278,21 +280,22 @@ export const featuredProjects = [
   },
   {
     id: "mortal-run",
-    sortDate: "2025-08-16",
-    createdAt: "Agosto 2025",
+    sortDate: "2023-09-30",
+    createdAt: "Septiembre 2023",
     title: "Mortal Run",
     category: "Videojuego web",
     status: "Jugable",
     accent: "emerald",
-    previewAccent: "#fcd34d",
+    previewAccent: "#53d134",
+    previewAccentAlt: "#ff8d1a",
     previewSurface:
-      "radial-gradient(circle at 18% 18%, rgba(250,204,21,0.28), transparent 25%), radial-gradient(circle at 80% 24%, rgba(34,197,94,0.18), transparent 24%), linear-gradient(135deg, rgba(33,18,10,0.96), rgba(48,29,14,0.88) 50%, rgba(14,15,18,0.98))",
+      "radial-gradient(circle at 16% 18%, rgba(83,209,52,0.24), transparent 24%), radial-gradient(circle at 82% 22%, rgba(255,141,26,0.22), transparent 24%), linear-gradient(135deg, rgba(9,35,16,0.96), rgba(17,53,76,0.88) 50%, rgba(22,14,12,0.98))",
     previewLabel: "Espacio para gameplay de Mortal Run",
     previewNote:
       "Ideal para poner una captura del nivel, interfaz de juego o momentos de plataforma.",
     previewImage: mortalRunPreview,
     summary:
-      "Mortal Run es un juego hibrido 2D/3D con mecanicas de plataformas, doble salto, habilidades y progresion. Sirve como demostracion de tu capacidad para construir experiencias jugables con personalidad, cuidando sensacion de movimiento, ritmo y presentacion.",
+      "Mortal Run es un juego de obstaculos y plataformas con mapas en 2D y 3D, accesorios, efectos visibles y habilidades como doble salto, deslizarse, escalar paredes y volar con globo. Propone una mezcla de mecanicas poco comun en este tipo de proyectos, y por eso destaca como una experiencia competitiva que empuja al jugador a mejorar rutas, tiempos y dominio del movimiento.",
     stack: ["Gameplay", "Diseño de niveles", "Web", "Marca personal"],
     repositories: [],
     previews: [
@@ -301,21 +304,22 @@ export const featuredProjects = [
   },
   {
     id: "im-king",
-    sortDate: "2025-07-08",
-    createdAt: "Julio 2025",
+    sortDate: "2020-07-26",
+    createdAt: "Julio 2020",
     title: "I'm King",
     category: "Videojuego web",
     status: "Publicado",
     accent: "amber",
-    previewAccent: "#fbbf24",
+    previewAccent: "#f4c53f",
+    previewAccentAlt: "#ff6b2c",
     previewSurface:
-      "radial-gradient(circle at 18% 20%, rgba(251,191,36,0.32), transparent 24%), radial-gradient(circle at 80% 22%, rgba(245,158,11,0.18), transparent 22%), linear-gradient(135deg, rgba(45,24,10,0.96), rgba(73,38,13,0.88) 52%, rgba(14,12,10,0.98))",
+      "radial-gradient(circle at 18% 20%, rgba(244,197,63,0.32), transparent 24%), radial-gradient(circle at 80% 22%, rgba(255,107,44,0.2), transparent 22%), linear-gradient(135deg, rgba(46,27,12,0.96), rgba(70,46,20,0.9) 52%, rgba(17,13,10,0.98))",
     previewLabel: "Espacio para gameplay de I'm King",
     previewImage: imKingPreview,
     previewNote:
       "Aqui podras mostrar pantalla inicial, puntuaciones o una escena representativa del juego.",
     summary:
-      "I'm King es un juego web enfocado en partidas cortas, lectura visual inmediata y una sensacion arcade mas directa. Funciona muy bien dentro del portafolio porque muestra variedad en tu trabajo de gameplay y en la construccion de experiencias ligeras listas para jugar desde el navegador.",
+      "I'm King gira alrededor de una idea clara: coronarte o quitarle el trono a otro jugador en rondas donde defender, escapar y atacar cambia por completo tu estrategia. No es comun ver una propuesta tan directa de combate por control del rey con armas y mapas arena, y por eso funciona como un proyecto con identidad propia y un loop competitivo facil de entender.",
     stack: ["Arcade", "Game feel", "Web", "Marca personal"],
     repositories: [],
     previews: [
@@ -395,21 +399,22 @@ export const featuredProjects = [
   },
   {
     id: "educamp",
-    sortDate: "2023-08-20",
-    createdAt: "Agosto 2023",
+    sortDate: "2022-06-10",
+    createdAt: "Junio 2022",
     title: "EduCamp",
     category: "Proyecto de hackathon educativo",
     status: "Hackathon",
     accent: "emerald",
-    previewAccent: "#6ee7b7",
+    previewAccent: "#2f91ff",
+    previewAccentAlt: "#80d62d",
     previewSurface:
-      "radial-gradient(circle at 16% 18%, rgba(110,231,183,0.3), transparent 24%), radial-gradient(circle at 80% 20%, rgba(74,222,128,0.18), transparent 22%), linear-gradient(135deg, rgba(9,34,27,0.96), rgba(13,53,36,0.88) 54%, rgba(7,12,14,0.98))",
+      "radial-gradient(circle at 16% 18%, rgba(47,145,255,0.26), transparent 24%), radial-gradient(circle at 80% 20%, rgba(128,214,45,0.18), transparent 22%), linear-gradient(135deg, rgba(10,28,49,0.96), rgba(11,61,84,0.88) 54%, rgba(11,20,16,0.98))",
     previewLabel: "Espacio para capturas de EduCamp",
     previewImage: eduCampPreview,
     previewNote:
       "Puedes mostrar aqui el concepto principal o la landing construida para la propuesta.",
     summary:
-      "EduCamp reune la idea de hackathon y su presentacion web en un mismo proyecto destacado. Te ayuda a mostrar no solo la solucion planteada, sino tambien tu capacidad para empaquetarla visualmente en una experiencia mas clara, navegable y lista para presentar.",
+      "EduCamp es una app educativa para primeros años de primaria que enseña lectura, comprension lectora y aritmetica basica con una ruta de aprendizaje progresiva, videos, actividades y minijuegos. Surge para atender el rezago educativo y gano fuerza al contar con convenio y respaldo de la Secretaria de Educacion Publica de Campeche, SEDUC, para impulsar su validacion y alcance.",
     stack: ["Hackathon", "Web", "Presentacion", "Educacion"],
     repositories: [
       projectLink("GitHub","https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Edu-Camp"),

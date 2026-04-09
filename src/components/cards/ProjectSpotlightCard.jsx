@@ -1,21 +1,6 @@
-const THEMES = {
-  amber: {
-    surface: "from-amber-300/14 via-orange-300/6 to-transparent",
-  },
-  violet: {
-    surface: "from-fuchsia-400/14 via-violet-400/6 to-transparent",
-  },
-  emerald: {
-    surface: "from-emerald-300/14 via-teal-300/6 to-transparent",
-  },
-  cyan: {
-    surface: "from-cyan-300/14 via-sky-300/6 to-transparent",
-  },
-};
-
 export default function ProjectSpotlightCard({ project }) {
-  const theme = THEMES[project.accent] ?? THEMES.cyan;
   const accent = project.previewAccent ?? "#ffffff";
+  const accentAlt = project.previewAccentAlt ?? accent;
   const description = project.summary ?? project.description ?? project.tagline ?? "";
   const projectLinks = [
     ...project.repositories.map((link) => ({ ...link, variant: "github" })),
@@ -24,7 +9,15 @@ export default function ProjectSpotlightCard({ project }) {
 
   return (
     <article className="relative flex min-h-0 flex-col overflow-hidden rounded-[1.7rem] bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_22%),rgba(4,6,12,0.2)] p-4 backdrop-blur-sm md:p-5">
-      <div className={`absolute inset-0 bg-gradient-to-br ${theme.surface}`} />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `radial-gradient(circle at 14% 18%, ${toAlpha(accent, 0.18)}, transparent 26%), radial-gradient(circle at 84% 20%, ${toAlpha(
+            accentAlt,
+            0.12
+          )}, transparent 24%)`,
+        }}
+      />
 
       <div className="relative flex min-h-0 flex-1 flex-col">
         <ProjectPreview project={project} />
