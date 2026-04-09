@@ -39,7 +39,10 @@ import miniDBeaverPreview from "../assets/images/previews/MiniDBeaver.png";
 import spaceVisionPreview from "../assets/images/previews/SpaceVision.png";
 import mortalRunPreview from "../assets/images/previews/MortalRun.png";
 import imKingPreview from "../assets/images/previews/ImKing.png";
-
+import electrorbitPreview from "../assets/images/previews/Electrorbit.png"
+import saludPlusPreview from "../assets/images/previews/SaludPlus.png"
+import beesMathPreview from "../assets/images/previews/BeesMath.png"
+import eduCampPreview from "../assets/images/previews/EduCamp.png"
 
 export const heroContent = {
   role: "Soy desarrollador de software",
@@ -331,6 +334,7 @@ export const featuredProjects = [
     previewSurface:
       "radial-gradient(circle at 16% 18%, rgba(192,132,252,0.3), transparent 26%), radial-gradient(circle at 80% 20%, rgba(168,85,247,0.18), transparent 22%), linear-gradient(135deg, rgba(25,12,36,0.96), rgba(43,20,62,0.88) 52%, rgba(11,10,20,0.98))",
     previewLabel: "Espacio para preview de la tabla periodica",
+    previewImage: electrorbitPreview,
     previewNote:
       "Reserva este lugar para mostrar la tabla, configuraciones o la navegacion principal.",
     summary:
@@ -351,6 +355,7 @@ export const featuredProjects = [
     status: "Hackathon",
     accent: "cyan",
     previewAccent: "#93c5fd",
+    previewImage: saludPlusPreview,
     previewSurface:
       "radial-gradient(circle at 18% 18%, rgba(147,197,253,0.3), transparent 24%), radial-gradient(circle at 78% 20%, rgba(34,211,238,0.18), transparent 24%), linear-gradient(135deg, rgba(12,27,43,0.96), rgba(15,40,68,0.88) 52%, rgba(10,14,21,0.98))",
     previewLabel: "Espacio para preview clinico del proyecto",
@@ -373,6 +378,7 @@ export const featuredProjects = [
     status: "Publicado",
     accent: "amber",
     previewAccent: "#fcd34d",
+    previewImage: beesMathPreview,
     previewSurface:
       "radial-gradient(circle at 16% 18%, rgba(252,211,77,0.34), transparent 26%), radial-gradient(circle at 80% 20%, rgba(251,191,36,0.2), transparent 24%), linear-gradient(135deg, rgba(51,30,11,0.96), rgba(74,40,14,0.88) 52%, rgba(22,14,16,0.98))",
     previewLabel: "Espacio para captura del sitio educativo",
@@ -383,6 +389,7 @@ export const featuredProjects = [
     stack: ["JavaScript", "HTML", "CSS", "UX infantil"],
     repositories: [
       projectLink("GitHub", "https://github.com/CastilloDevX/beesmath"),
+      projectLink("Website","https://castillodevx.github.io/beesmath/")
     ],
     previews: [],
   },
@@ -398,48 +405,18 @@ export const featuredProjects = [
     previewSurface:
       "radial-gradient(circle at 16% 18%, rgba(110,231,183,0.3), transparent 24%), radial-gradient(circle at 80% 20%, rgba(74,222,128,0.18), transparent 22%), linear-gradient(135deg, rgba(9,34,27,0.96), rgba(13,53,36,0.88) 54%, rgba(7,12,14,0.98))",
     previewLabel: "Espacio para capturas de EduCamp",
+    previewImage: eduCampPreview,
     previewNote:
       "Puedes mostrar aqui el concepto principal o la landing construida para la propuesta.",
     summary:
       "EduCamp reune la idea de hackathon y su presentacion web en un mismo proyecto destacado. Te ayuda a mostrar no solo la solucion planteada, sino tambien tu capacidad para empaquetarla visualmente en una experiencia mas clara, navegable y lista para presentar.",
     stack: ["Hackathon", "Web", "Presentacion", "Educacion"],
     repositories: [
-      projectLink(
-        "GitHub Proyecto",
-        "https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Edu-Camp"
-      ),
-      projectLink(
-        "GitHub Web",
-        "https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Edu-Camp-Web"
-      ),
+      projectLink("GitHub","https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Edu-Camp"),
+      projectLink("Website","https://educamp-sigma.vercel.app/"),
     ],
     previews: [],
-  },
-  {
-    id: "eco-style",
-    sortDate: "2022-09-18",
-    createdAt: "Septiembre 2022",
-    title: "EcoStyle",
-    category: "Concepto web de sostenibilidad",
-    status: "Concepto",
-    accent: "emerald",
-    previewAccent: "#86efac",
-    previewSurface:
-      "radial-gradient(circle at 18% 18%, rgba(134,239,172,0.3), transparent 24%), radial-gradient(circle at 80% 22%, rgba(74,222,128,0.18), transparent 22%), linear-gradient(135deg, rgba(12,31,19,0.96), rgba(18,54,29,0.88) 52%, rgba(8,12,11,0.98))",
-    previewLabel: "Espacio para preview de EcoStyle",
-    previewNote:
-      "Este lugar puede mostrar visuales del concepto, branding o la propuesta de interfaz.",
-    summary:
-      "EcoStyle funciona como una pieza de concepto donde se mezcla una idea de comunicacion visual con una ejecucion web accesible para presentar el proyecto. Dentro del portafolio ayuda a mostrar variedad tematica y sensibilidad de interfaz dentro de propuestas mas creativas.",
-    stack: ["HTML", "CSS", "Concepto visual", "Presentacion"],
-    repositories: [
-      projectLink(
-        "GitHub",
-        "https://github.com/CastilloDevX/Hightlight_CECYTEC_Projects/tree/main/Eco-Style-main/Practicas%20VSC"
-      ),
-    ],
-    previews: [],
-  },
+  }
 ];
 
 export const experiences = [
