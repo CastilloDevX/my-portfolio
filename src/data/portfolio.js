@@ -43,6 +43,7 @@ import electrorbitPreview from "../assets/images/previews/Electrorbit.png"
 import saludPlusPreview from "../assets/images/previews/SaludPlus.png"
 import beesMathPreview from "../assets/images/previews/BeesMath.png"
 import eduCampPreview from "../assets/images/previews/EduCamp.png"
+import quickCoinsPreview from "../assets/images/previews/QuickCoins.png";
 
 export const heroContent = {
   role: "Soy desarrollador de software",
@@ -179,6 +180,30 @@ export const services = [
 
 export const featuredProjects = [
   {
+    id: "quick-coins",
+    sortDate: "2026-03-27",
+    createdAt: "Marzo 2026",
+    title: "Quick Coins",
+    category: "Videojuego competitivo en Roblox",
+    status: "Desplegado",
+    accent: "amber",
+    previewAccent: "#f59e0b",
+    previewAccentAlt: "#fcd34d",
+    previewImage: quickCoinsPreview,
+    previewSurface:
+      "radial-gradient(circle at 16% 18%, rgba(245,158,11,0.32), transparent 24%), radial-gradient(circle at 82% 20%, rgba(250,204,21,0.22), transparent 24%), linear-gradient(135deg, rgba(45,25,10,0.96), rgba(72,43,12,0.9) 50%, rgba(12,10,8,0.98))",
+    previewLabel: "Espacio para preview de Quick Coins",
+    previewNote:
+      "Este espacio queda listo para colocar una portada del juego, capturas de minijuegos o escenas del sistema de recompensas.",
+    summary:
+      "Quick Coins es un juego competitivo donde varios jugadores se enfrentan en minijuegos como TicTacToe, disparos estilo Rivals, parkour y busqueda del tesoro para ganar recompensas mientras se divierten. Cada ronda tiene un costo de entrada, pero quien domina el reto se queda con el premio, creando una experiencia intensa que mezcla habilidad, riesgo y emocion. El proyecto tambien integra tienda, desafios constantes y un sistema competitivo pensado para mantener el progreso activo y reforzar la propuesta de valor para la comunidad.",
+    stack: ["Roblox", "Minijuegos", "Sistema competitivo", "Economia ingame"],
+    repositories: [],
+    previews: [
+      projectLink("Jugar ahora", "https://www.roblox.com/es/games/89338459348708/Quick-Coins")
+    ],
+  },
+  {
     id: "season-service",
     sortDate: "2025-02-18",
     createdAt: "Febrero 2025",
@@ -207,7 +232,7 @@ export const featuredProjects = [
     createdAt: "Diciembre 2025",
     title: "Movikoox",
     category: "Ecosistema de movilidad urbana",
-    status: "En desarrollo",
+    status: "Desplegado",
     accent: "cyan",
     previewAccent: "#9f2241",
     previewAccentAlt: "#f7d9b0",
@@ -259,7 +284,7 @@ export const featuredProjects = [
     createdAt: "Novimebre 2025",
     title: "SpaceVision",
     category: "Proyecto NASA Space Apps",
-    status: "Top 4",
+    status: "Hackathon NASA - Top 4",
     accent: "violet",
     previewAccent: "#f0abfc",
     previewSurface:
@@ -284,7 +309,7 @@ export const featuredProjects = [
     createdAt: "Septiembre 2023",
     title: "Mortal Run",
     category: "Videojuego web",
-    status: "Jugable",
+    status: "Desplegado",
     accent: "emerald",
     previewAccent: "#53d134",
     previewAccentAlt: "#ff8d1a",
@@ -308,7 +333,7 @@ export const featuredProjects = [
     createdAt: "Julio 2020",
     title: "I'm King",
     category: "Videojuego web",
-    status: "Publicado",
+    status: "Gamejam Roblox - Campeon Internacional 2021",
     accent: "amber",
     previewAccent: "#f4c53f",
     previewAccentAlt: "#ff6b2c",
@@ -332,7 +357,7 @@ export const featuredProjects = [
     createdAt: "Noviembre 2024",
     title: "Electrorbit",
     category: "Herramienta visual de quimica",
-    status: "Publicado",
+    status: "Desplegado",
     accent: "violet",
     previewAccent: "#c084fc",
     previewSurface:
@@ -356,7 +381,7 @@ export const featuredProjects = [
     createdAt: "Abril 2024",
     title: "SaludPlus",
     category: "API medica de hackathon",
-    status: "Hackathon",
+    status: "Hackathon Talend Land 2024",
     accent: "cyan",
     previewAccent: "#93c5fd",
     previewImage: saludPlusPreview,
@@ -379,7 +404,7 @@ export const featuredProjects = [
     createdAt: "Septiembre 2023",
     title: "Beesmath",
     category: "Experiencia web educativa",
-    status: "Publicado",
+    status: "Desplegado",
     accent: "amber",
     previewAccent: "#fcd34d",
     previewImage: beesMathPreview,
@@ -403,7 +428,7 @@ export const featuredProjects = [
     createdAt: "Junio 2022",
     title: "EduCamp",
     category: "Proyecto de hackathon educativo",
-    status: "Hackathon",
+    status: "Hackathon TCS Empowers - Top #1",
     accent: "emerald",
     previewAccent: "#2f91ff",
     previewAccentAlt: "#80d62d",
@@ -510,6 +535,6 @@ function icon(src, label) {
   return { src, label };
 }
 
-function projectLink(label, url) {
-  return { label, url };
+function projectLink(label, url, type) {
+  return type ? { label, url, type } : { label, url };
 }
